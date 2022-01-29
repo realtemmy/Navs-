@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.sidenav{
+    background-color: bisque;
+    height: 100vh;
+    width: 40%;
+    transform: translate(-100%);
+    transition: transform 0.5s;
+}
+.sidenav.show{
+    transform: translate(0);
+}
+.sidenav .logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(72, 72, 122);
+    cursor: pointer;
+    text-shadow: 0 2px 3px rgb(37, 37, 255), 2px 0 3px rgb(39, 15, 15);
+}
+.btn{
+    font-size: 3rem;
+    float: right;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: rgb(55, 55, 97);
+}
+.x-btn{
+    background-color: transparent;
+    font-size: 24px;
+    float: right;
+    color: red;
+    text-shadow: 2px 2px 3px black;
+    cursor: pointer;
+    border: none;
+}
+.sidenav .link{
+    padding-top: 15px;
+    text-align: center;
+}
+.sidenav div a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+.sidenav .link:hover{
+    background-color: rgb(221, 197, 167);
+}
+.sidenav .link a:hover{
+    color: white;
+}
+@media (max-width: 768px) {
+    .sidenav{
+        width: 100%;
+    }
+    .sidenav .logo{
+        padding: 5px;
+    }
+    .x-btn{
+        font-size: 2.5rem;
+    }
+
+}
